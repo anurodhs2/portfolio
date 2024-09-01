@@ -1,0 +1,473 @@
+2024-09-01T16:25:30.174+05:30  INFO 4944 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : Starting PortfolioApplication using Java 17.0.11 with PID 4944 (/Users/anurodhsingh/Documents/portfolio/target/classes started by anurodhsingh in /Users/anurodhsingh/Documents/portfolio)
+2024-09-01T16:25:30.182+05:30  INFO 4944 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-09-01T16:25:31.474+05:30  INFO 4944 --- [portfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-01T16:25:31.572+05:30  INFO 4944 --- [portfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 1 JPA repository interface.
+2024-09-01T16:25:32.598+05:30  INFO 4944 --- [portfolio] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-01T16:25:32.610+05:30  INFO 4944 --- [portfolio] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-01T16:25:32.610+05:30  INFO 4944 --- [portfolio] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-01T16:25:33.076+05:30  INFO 4944 --- [portfolio] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-01T16:25:33.083+05:30  INFO 4944 --- [portfolio] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2818 ms
+2024-09-01T16:25:33.362+05:30  INFO 4944 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-01T16:25:33.771+05:30  INFO 4944 --- [portfolio] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49edcb30
+2024-09-01T16:25:33.773+05:30  INFO 4944 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-01T16:25:33.854+05:30  INFO 4944 --- [portfolio] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-01T16:25:33.913+05:30  INFO 4944 --- [portfolio] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.9.Final
+2024-09-01T16:25:34.013+05:30  INFO 4944 --- [portfolio] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-01T16:25:34.437+05:30  INFO 4944 --- [portfolio] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-01T16:25:34.507+05:30  WARN 4944 --- [portfolio] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.12 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-09-01T16:25:35.023+05:30  INFO 4944 --- [portfolio] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.learning.portfolio.entities.UserEntity (class must be instantiated by Interceptor)
+2024-09-01T16:25:35.146+05:30  INFO 4944 --- [portfolio] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-01T16:25:35.150+05:30  INFO 4944 --- [portfolio] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T16:25:35.672+05:30  WARN 4944 --- [portfolio] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-01T16:25:35.712+05:30  WARN 4944 --- [portfolio] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d2f7f5b7-85f3-45eb-8799-5bd3e43c977d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-01T16:25:36.415+05:30  INFO 4944 --- [portfolio] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5c945ee7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51a5a8ba, org.springframework.security.web.context.SecurityContextHolderFilter@5a079446, org.springframework.security.web.header.HeaderWriterFilter@3f31892e, org.springframework.web.filter.CorsFilter@16eb93af, org.springframework.security.web.csrf.CsrfFilter@22561412, org.springframework.security.web.authentication.logout.LogoutFilter@4d0d568f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@407d2a01, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@118f2486, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b441609, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@404566e7, org.springframework.security.web.access.ExceptionTranslationFilter@112a50a1, org.springframework.security.web.access.intercept.AuthorizationFilter@2c0d7099]
+2024-09-01T16:25:36.736+05:30  INFO 4944 --- [portfolio] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-09-01T16:25:36.760+05:30  INFO 4944 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : Started PortfolioApplication in 7.145 seconds (process running for 9.164)
+2024-09-01T16:27:27.423+05:30  INFO 4944 --- [portfolio] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-01T16:27:27.423+05:30  INFO 4944 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-01T16:27:27.437+05:30  INFO 4944 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2024-09-01T16:28:56.459+05:30  INFO 4944 --- [portfolio] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T16:28:56.466+05:30  INFO 4944 --- [portfolio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-01T16:28:56.481+05:30  INFO 4944 --- [portfolio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-01T16:29:18.074+05:30  INFO 5036 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : Starting PortfolioApplication using Java 17.0.11 with PID 5036 (/Users/anurodhsingh/Documents/portfolio/target/classes started by anurodhsingh in /Users/anurodhsingh/Documents/portfolio)
+2024-09-01T16:29:18.077+05:30  INFO 5036 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-09-01T16:29:19.337+05:30  INFO 5036 --- [portfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-01T16:29:19.439+05:30  INFO 5036 --- [portfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 1 JPA repository interface.
+2024-09-01T16:29:20.385+05:30  INFO 5036 --- [portfolio] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-01T16:29:20.395+05:30  INFO 5036 --- [portfolio] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-01T16:29:20.395+05:30  INFO 5036 --- [portfolio] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-01T16:29:20.468+05:30  INFO 5036 --- [portfolio] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-01T16:29:20.470+05:30  INFO 5036 --- [portfolio] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2322 ms
+2024-09-01T16:29:20.735+05:30  INFO 5036 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-01T16:29:20.883+05:30  INFO 5036 --- [portfolio] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2eb60c71
+2024-09-01T16:29:20.885+05:30  INFO 5036 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-01T16:29:20.929+05:30  INFO 5036 --- [portfolio] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-01T16:29:20.976+05:30  INFO 5036 --- [portfolio] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.9.Final
+2024-09-01T16:29:21.060+05:30  INFO 5036 --- [portfolio] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-01T16:29:21.252+05:30  INFO 5036 --- [portfolio] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-01T16:29:21.315+05:30  WARN 5036 --- [portfolio] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.12 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-09-01T16:29:21.832+05:30  INFO 5036 --- [portfolio] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.learning.portfolio.entities.UserEntity (class must be instantiated by Interceptor)
+2024-09-01T16:29:21.966+05:30  INFO 5036 --- [portfolio] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-01T16:29:21.969+05:30  INFO 5036 --- [portfolio] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T16:29:22.496+05:30  WARN 5036 --- [portfolio] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-01T16:29:22.527+05:30  WARN 5036 --- [portfolio] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: fd71d04d-7766-4c46-bd81-47a5db35db4c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-01T16:29:22.957+05:30  INFO 5036 --- [portfolio] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1185b0b7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ec70725, org.springframework.security.web.context.SecurityContextHolderFilter@78e4fa1, org.springframework.security.web.header.HeaderWriterFilter@4ee19768, org.springframework.web.filter.CorsFilter@2082e0e4, org.springframework.security.web.csrf.CsrfFilter@136cad3e, org.springframework.security.web.authentication.logout.LogoutFilter@da4c5cb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3ecbfba1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44f338ec, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@112a50a1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15f229e8, org.springframework.security.web.access.ExceptionTranslationFilter@5923210, org.springframework.security.web.access.intercept.AuthorizationFilter@1387bd84]
+2024-09-01T16:29:23.549+05:30  INFO 5036 --- [portfolio] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-09-01T16:29:23.575+05:30  INFO 5036 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : Started PortfolioApplication in 6.039 seconds (process running for 6.913)
+2024-09-01T16:29:34.191+05:30  INFO 5036 --- [portfolio] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-01T16:29:34.192+05:30  INFO 5036 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-01T16:29:34.195+05:30  INFO 5036 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-09-01T16:31:01.609+05:30  INFO 5036 --- [portfolio] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T16:31:01.616+05:30  INFO 5036 --- [portfolio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-01T16:31:01.630+05:30  INFO 5036 --- [portfolio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-01T16:31:05.120+05:30  INFO 5051 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : Starting PortfolioApplication using Java 17.0.11 with PID 5051 (/Users/anurodhsingh/Documents/portfolio/target/classes started by anurodhsingh in /Users/anurodhsingh/Documents/portfolio)
+2024-09-01T16:31:05.124+05:30  INFO 5051 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-09-01T16:31:06.355+05:30  INFO 5051 --- [portfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-01T16:31:06.449+05:30  INFO 5051 --- [portfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interface.
+2024-09-01T16:31:07.407+05:30  INFO 5051 --- [portfolio] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-01T16:31:07.417+05:30  INFO 5051 --- [portfolio] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-01T16:31:07.417+05:30  INFO 5051 --- [portfolio] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-01T16:31:07.490+05:30  INFO 5051 --- [portfolio] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-01T16:31:07.493+05:30  INFO 5051 --- [portfolio] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2294 ms
+2024-09-01T16:31:07.744+05:30  INFO 5051 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-01T16:31:07.884+05:30  INFO 5051 --- [portfolio] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4315c28c
+2024-09-01T16:31:07.885+05:30  INFO 5051 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-01T16:31:07.923+05:30  INFO 5051 --- [portfolio] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-01T16:31:07.972+05:30  INFO 5051 --- [portfolio] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.9.Final
+2024-09-01T16:31:08.057+05:30  INFO 5051 --- [portfolio] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-01T16:31:08.250+05:30  INFO 5051 --- [portfolio] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-01T16:31:08.305+05:30  WARN 5051 --- [portfolio] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.12 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-09-01T16:31:08.806+05:30  INFO 5051 --- [portfolio] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.learning.portfolio.entities.UserEntity (class must be instantiated by Interceptor)
+2024-09-01T16:31:08.930+05:30  INFO 5051 --- [portfolio] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-01T16:31:08.934+05:30  INFO 5051 --- [portfolio] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T16:31:09.384+05:30  WARN 5051 --- [portfolio] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-01T16:31:09.413+05:30  WARN 5051 --- [portfolio] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a30bc073-a62b-4432-a488-8957c084ceac
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-01T16:31:09.823+05:30  INFO 5051 --- [portfolio] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@30a5a58d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@59cb10e0, org.springframework.security.web.context.SecurityContextHolderFilter@41a3c6f5, org.springframework.security.web.header.HeaderWriterFilter@3fb4beb1, org.springframework.web.filter.CorsFilter@3d763ae5, org.springframework.security.web.csrf.CsrfFilter@4ee19768, org.springframework.security.web.authentication.logout.LogoutFilter@1185b0b7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@28b4b10e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@37c762aa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@13087c75, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2dfab167, org.springframework.security.web.access.ExceptionTranslationFilter@22f7bf36, org.springframework.security.web.access.intercept.AuthorizationFilter@1e9f48d4]
+2024-09-01T16:31:10.148+05:30  INFO 5051 --- [portfolio] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-09-01T16:31:10.175+05:30  INFO 5051 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : Started PortfolioApplication in 5.574 seconds (process running for 6.355)
+2024-09-01T16:31:22.120+05:30  INFO 5051 --- [portfolio] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-01T16:31:22.122+05:30  INFO 5051 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-01T16:31:22.131+05:30  INFO 5051 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2024-09-01T16:41:30.475+05:30  INFO 5051 --- [portfolio] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T16:41:30.484+05:30  INFO 5051 --- [portfolio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-01T16:41:30.496+05:30  INFO 5051 --- [portfolio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-01T16:41:34.406+05:30  INFO 5728 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : Starting PortfolioApplication using Java 17.0.11 with PID 5728 (/Users/anurodhsingh/Documents/portfolio/target/classes started by anurodhsingh in /Users/anurodhsingh/Documents/portfolio)
+2024-09-01T16:41:34.410+05:30  INFO 5728 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-09-01T16:41:35.680+05:30  INFO 5728 --- [portfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-01T16:41:35.770+05:30  INFO 5728 --- [portfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interface.
+2024-09-01T16:41:36.715+05:30  INFO 5728 --- [portfolio] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-01T16:41:36.723+05:30  INFO 5728 --- [portfolio] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-01T16:41:36.724+05:30  INFO 5728 --- [portfolio] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-01T16:41:36.815+05:30  INFO 5728 --- [portfolio] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-01T16:41:36.819+05:30  INFO 5728 --- [portfolio] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2326 ms
+2024-09-01T16:41:37.099+05:30  INFO 5728 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-01T16:41:37.282+05:30  INFO 5728 --- [portfolio] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@10177794
+2024-09-01T16:41:37.283+05:30  INFO 5728 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-01T16:41:37.352+05:30  INFO 5728 --- [portfolio] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-01T16:41:37.398+05:30  INFO 5728 --- [portfolio] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.9.Final
+2024-09-01T16:41:37.497+05:30  INFO 5728 --- [portfolio] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-01T16:41:37.711+05:30  INFO 5728 --- [portfolio] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-01T16:41:37.776+05:30  WARN 5728 --- [portfolio] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.12 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-09-01T16:41:38.270+05:30  INFO 5728 --- [portfolio] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.learning.portfolio.entities.UserEntity (class must be instantiated by Interceptor)
+2024-09-01T16:41:38.381+05:30  INFO 5728 --- [portfolio] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-01T16:41:38.385+05:30  INFO 5728 --- [portfolio] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T16:41:38.835+05:30  WARN 5728 --- [portfolio] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-01T16:41:38.873+05:30  WARN 5728 --- [portfolio] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9d77978f-ee4c-43b2-825f-758c95f2fe16
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-01T16:41:39.320+05:30  INFO 5728 --- [portfolio] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@29ce33e9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1f86f7da, org.springframework.security.web.context.SecurityContextHolderFilter@112a50a1, org.springframework.security.web.header.HeaderWriterFilter@4516c2ef, org.springframework.web.filter.CorsFilter@28b4b10e, org.springframework.security.web.csrf.CsrfFilter@54fd5759, org.springframework.security.web.authentication.logout.LogoutFilter@2a0881f1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2c7aba7c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f31892e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7fb46c10, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c0d7099, org.springframework.security.web.access.ExceptionTranslationFilter@1c879f07, org.springframework.security.web.access.intercept.AuthorizationFilter@2082e0e4]
+2024-09-01T16:41:39.888+05:30  INFO 5728 --- [portfolio] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-09-01T16:41:39.911+05:30  INFO 5728 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : Started PortfolioApplication in 6.024 seconds (process running for 6.827)
+2024-09-01T16:41:44.507+05:30  INFO 5728 --- [portfolio] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-01T16:41:44.507+05:30  INFO 5728 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-01T16:41:44.520+05:30  INFO 5728 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2024-09-01T16:42:49.574+05:30  INFO 5728 --- [portfolio] [http-nio-8080-exec-2] c.l.portfolio.services.UserService       : user com.learning.portfolio.entities.UserEntity@553b9cb3
+2024-09-01T16:42:49.750+05:30  INFO 5728 --- [portfolio] [http-nio-8080-exec-2] c.l.portfolio.services.UserService       : user data saved in db
+2024-09-01T16:45:05.477+05:30  INFO 6419 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : Starting PortfolioApplication using Java 17.0.11 with PID 6419 (/Users/anurodhsingh/Documents/portfolio/target/classes started by anurodhsingh in /Users/anurodhsingh/Documents/portfolio)
+2024-09-01T16:45:05.482+05:30  INFO 6419 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-09-01T16:45:06.772+05:30  INFO 6419 --- [portfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-01T16:45:06.866+05:30  INFO 6419 --- [portfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 1 JPA repository interface.
+2024-09-01T16:45:07.849+05:30  INFO 6419 --- [portfolio] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-01T16:45:07.936+05:30  INFO 6419 --- [portfolio] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2381 ms
+2024-09-01T16:45:08.165+05:30  INFO 6419 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-01T16:45:08.308+05:30  INFO 6419 --- [portfolio] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e5b621b
+2024-09-01T16:45:08.310+05:30  INFO 6419 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-01T16:45:08.364+05:30  INFO 6419 --- [portfolio] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-01T16:45:08.410+05:30  INFO 6419 --- [portfolio] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.9.Final
+2024-09-01T16:45:08.488+05:30  INFO 6419 --- [portfolio] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-01T16:45:08.711+05:30  INFO 6419 --- [portfolio] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-01T16:45:08.784+05:30  WARN 6419 --- [portfolio] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.12 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-09-01T16:45:09.276+05:30  INFO 6419 --- [portfolio] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.learning.portfolio.entities.UserEntity (class must be instantiated by Interceptor)
+2024-09-01T16:45:09.399+05:30  INFO 6419 --- [portfolio] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-01T16:45:09.402+05:30  INFO 6419 --- [portfolio] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T16:45:09.893+05:30  WARN 6419 --- [portfolio] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-01T16:45:09.934+05:30  WARN 6419 --- [portfolio] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: b3c33987-b814-4c74-a77a-cc22eb7391f6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-01T16:45:10.336+05:30  INFO 6419 --- [portfolio] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@15f229e8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29ce33e9, org.springframework.security.web.context.SecurityContextHolderFilter@64acf8d2, org.springframework.security.web.header.HeaderWriterFilter@78e4fa1, org.springframework.web.filter.CorsFilter@1f86f7da, org.springframework.security.web.csrf.CsrfFilter@220e1b7b, org.springframework.security.web.authentication.logout.LogoutFilter@1a99692, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4d0d568f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6258f9d1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3cd89c72, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@28b4b10e, org.springframework.security.web.access.ExceptionTranslationFilter@8113ea7, org.springframework.security.web.access.intercept.AuthorizationFilter@ec70725]
+2024-09-01T16:45:10.655+05:30  WARN 6419 --- [portfolio] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-09-01T16:45:10.657+05:30  INFO 6419 --- [portfolio] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T16:45:10.659+05:30  INFO 6419 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-01T16:45:10.668+05:30  INFO 6419 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-01T16:45:14.154+05:30  INFO 5728 --- [portfolio] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T16:45:14.160+05:30  INFO 5728 --- [portfolio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-01T16:45:14.176+05:30  INFO 5728 --- [portfolio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-01T16:45:18.261+05:30  INFO 6457 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : Starting PortfolioApplication using Java 17.0.11 with PID 6457 (/Users/anurodhsingh/Documents/portfolio/target/classes started by anurodhsingh in /Users/anurodhsingh/Documents/portfolio)
+2024-09-01T16:45:18.266+05:30  INFO 6457 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-09-01T16:45:19.509+05:30  INFO 6457 --- [portfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-01T16:45:19.600+05:30  INFO 6457 --- [portfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 1 JPA repository interface.
+2024-09-01T16:45:20.507+05:30  INFO 6457 --- [portfolio] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-01T16:45:20.517+05:30  INFO 6457 --- [portfolio] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-01T16:45:20.517+05:30  INFO 6457 --- [portfolio] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-01T16:45:20.605+05:30  INFO 6457 --- [portfolio] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-01T16:45:20.613+05:30  INFO 6457 --- [portfolio] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2266 ms
+2024-09-01T16:45:20.859+05:30  INFO 6457 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-01T16:45:21.014+05:30  INFO 6457 --- [portfolio] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e5c2463
+2024-09-01T16:45:21.016+05:30  INFO 6457 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-01T16:45:21.089+05:30  INFO 6457 --- [portfolio] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-01T16:45:21.129+05:30  INFO 6457 --- [portfolio] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.9.Final
+2024-09-01T16:45:21.234+05:30  INFO 6457 --- [portfolio] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-01T16:45:21.440+05:30  INFO 6457 --- [portfolio] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-01T16:45:21.502+05:30  WARN 6457 --- [portfolio] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.12 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-09-01T16:45:21.980+05:30  INFO 6457 --- [portfolio] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.learning.portfolio.entities.UserEntity (class must be instantiated by Interceptor)
+2024-09-01T16:45:22.084+05:30  INFO 6457 --- [portfolio] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-01T16:45:22.089+05:30  INFO 6457 --- [portfolio] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T16:45:22.541+05:30  WARN 6457 --- [portfolio] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-01T16:45:22.575+05:30  WARN 6457 --- [portfolio] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 7e5d2bf8-46e6-4350-b87b-3a948bf4993c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-01T16:45:22.998+05:30  INFO 6457 --- [portfolio] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1f86f7da, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28b4b10e, org.springframework.security.web.context.SecurityContextHolderFilter@6258f9d1, org.springframework.security.web.header.HeaderWriterFilter@44f338ec, org.springframework.web.filter.CorsFilter@2c0d7099, org.springframework.security.web.csrf.CsrfFilter@6a358906, org.springframework.security.web.authentication.logout.LogoutFilter@7a85454b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@729c98, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3cd89c72, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a079446, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@74844f8a, org.springframework.security.web.access.ExceptionTranslationFilter@78e4fa1, org.springframework.security.web.access.intercept.AuthorizationFilter@15f229e8]
+2024-09-01T16:45:23.294+05:30  INFO 6457 --- [portfolio] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-09-01T16:45:23.313+05:30  INFO 6457 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : Started PortfolioApplication in 5.598 seconds (process running for 6.435)
+2024-09-01T16:45:29.714+05:30  INFO 6457 --- [portfolio] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-01T16:45:29.715+05:30  INFO 6457 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-01T16:45:29.731+05:30  INFO 6457 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2024-09-01T16:49:05.970+05:30  INFO 6457 --- [portfolio] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T16:49:05.976+05:30  INFO 6457 --- [portfolio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-01T16:49:05.988+05:30  INFO 6457 --- [portfolio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-01T16:49:09.618+05:30  INFO 7079 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : Starting PortfolioApplication using Java 17.0.11 with PID 7079 (/Users/anurodhsingh/Documents/portfolio/target/classes started by anurodhsingh in /Users/anurodhsingh/Documents/portfolio)
+2024-09-01T16:49:09.622+05:30  INFO 7079 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-09-01T16:49:10.843+05:30  INFO 7079 --- [portfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-01T16:49:10.933+05:30  INFO 7079 --- [portfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 1 JPA repository interface.
+2024-09-01T16:49:11.916+05:30  INFO 7079 --- [portfolio] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-01T16:49:11.925+05:30  INFO 7079 --- [portfolio] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-01T16:49:11.925+05:30  INFO 7079 --- [portfolio] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-01T16:49:11.995+05:30  INFO 7079 --- [portfolio] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-01T16:49:11.998+05:30  INFO 7079 --- [portfolio] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2301 ms
+2024-09-01T16:49:12.239+05:30  INFO 7079 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-01T16:49:12.388+05:30  INFO 7079 --- [portfolio] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e5b621b
+2024-09-01T16:49:12.390+05:30  INFO 7079 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-01T16:49:12.430+05:30  INFO 7079 --- [portfolio] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-01T16:49:12.472+05:30  INFO 7079 --- [portfolio] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.9.Final
+2024-09-01T16:49:12.585+05:30  INFO 7079 --- [portfolio] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-01T16:49:12.779+05:30  INFO 7079 --- [portfolio] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-01T16:49:12.837+05:30  WARN 7079 --- [portfolio] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.12 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-09-01T16:49:13.336+05:30  INFO 7079 --- [portfolio] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.learning.portfolio.entities.UserEntity (class must be instantiated by Interceptor)
+2024-09-01T16:49:13.459+05:30  INFO 7079 --- [portfolio] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-01T16:49:13.463+05:30  INFO 7079 --- [portfolio] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T16:49:13.920+05:30  WARN 7079 --- [portfolio] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-01T16:49:13.949+05:30  WARN 7079 --- [portfolio] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 08525848-1dd9-4c3c-93f9-db8501b8dc81
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-01T16:49:14.389+05:30  INFO 7079 --- [portfolio] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@15f229e8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29ce33e9, org.springframework.security.web.context.SecurityContextHolderFilter@64acf8d2, org.springframework.security.web.header.HeaderWriterFilter@78e4fa1, org.springframework.web.filter.CorsFilter@1f86f7da, org.springframework.security.web.csrf.CsrfFilter@220e1b7b, org.springframework.security.web.authentication.logout.LogoutFilter@1a99692, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4d0d568f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6258f9d1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3cd89c72, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@28b4b10e, org.springframework.security.web.access.ExceptionTranslationFilter@8113ea7, org.springframework.security.web.access.intercept.AuthorizationFilter@ec70725]
+2024-09-01T16:49:14.799+05:30  INFO 7079 --- [portfolio] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-09-01T16:49:14.830+05:30  INFO 7079 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : Started PortfolioApplication in 5.745 seconds (process running for 6.532)
+2024-09-01T16:49:20.130+05:30  INFO 7079 --- [portfolio] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-01T16:49:20.131+05:30  INFO 7079 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-01T16:49:20.140+05:30  INFO 7079 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2024-09-01T16:53:11.517+05:30  INFO 7079 --- [portfolio] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T16:53:11.525+05:30  INFO 7079 --- [portfolio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-01T16:53:11.538+05:30  INFO 7079 --- [portfolio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-01T16:54:50.812+05:30  INFO 8013 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : Starting PortfolioApplication using Java 17.0.11 with PID 8013 (/Users/anurodhsingh/Documents/portfolio/target/classes started by anurodhsingh in /Users/anurodhsingh/Documents/portfolio)
+2024-09-01T16:54:50.817+05:30  INFO 8013 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-09-01T16:54:52.124+05:30  INFO 8013 --- [portfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-01T16:54:52.218+05:30  INFO 8013 --- [portfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interface.
+2024-09-01T16:54:53.185+05:30  INFO 8013 --- [portfolio] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-01T16:54:53.194+05:30  INFO 8013 --- [portfolio] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-01T16:54:53.194+05:30  INFO 8013 --- [portfolio] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-01T16:54:53.287+05:30  INFO 8013 --- [portfolio] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-01T16:54:53.290+05:30  INFO 8013 --- [portfolio] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2391 ms
+2024-09-01T16:54:53.521+05:30  INFO 8013 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-01T16:54:53.691+05:30  INFO 8013 --- [portfolio] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@51a16adf
+2024-09-01T16:54:53.693+05:30  INFO 8013 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-01T16:54:53.774+05:30  INFO 8013 --- [portfolio] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-01T16:54:53.813+05:30  INFO 8013 --- [portfolio] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.9.Final
+2024-09-01T16:54:53.921+05:30  INFO 8013 --- [portfolio] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-01T16:54:54.129+05:30  INFO 8013 --- [portfolio] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-01T16:54:54.190+05:30  WARN 8013 --- [portfolio] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.12 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-09-01T16:54:54.678+05:30  INFO 8013 --- [portfolio] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.learning.portfolio.entities.UserEntity (class must be instantiated by Interceptor)
+2024-09-01T16:54:54.792+05:30  INFO 8013 --- [portfolio] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-01T16:54:54.796+05:30  INFO 8013 --- [portfolio] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T16:54:55.293+05:30  WARN 8013 --- [portfolio] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-01T16:54:55.325+05:30  WARN 8013 --- [portfolio] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d0d39799-19e2-45f1-bed4-9696cb5257a3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-01T16:54:55.762+05:30  INFO 8013 --- [portfolio] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7b9d602c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30a5a58d, org.springframework.security.web.context.SecurityContextHolderFilter@2b5a04b0, org.springframework.security.web.header.HeaderWriterFilter@4a3404fa, org.springframework.web.filter.CorsFilter@59cb10e0, org.springframework.security.web.csrf.CsrfFilter@70dd79f7, org.springframework.security.web.authentication.logout.LogoutFilter@3881b884, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1f86f7da, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b78a946, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4c438f66, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3d763ae5, org.springframework.security.web.access.ExceptionTranslationFilter@2b441609, org.springframework.security.web.access.intercept.AuthorizationFilter@63614cdd]
+2024-09-01T16:54:56.299+05:30  INFO 8013 --- [portfolio] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-09-01T16:54:56.339+05:30  INFO 8013 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : Started PortfolioApplication in 6.056 seconds (process running for 6.939)
+2024-09-01T16:55:05.883+05:30  INFO 8013 --- [portfolio] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-01T16:55:05.884+05:30  INFO 8013 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-01T16:55:05.895+05:30  INFO 8013 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2024-09-01T16:55:39.677+05:30  INFO 8013 --- [portfolio] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T16:55:39.684+05:30  INFO 8013 --- [portfolio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-01T16:55:39.696+05:30  INFO 8013 --- [portfolio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-01T16:55:44.005+05:30  INFO 8166 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : Starting PortfolioApplication using Java 17.0.11 with PID 8166 (/Users/anurodhsingh/Documents/portfolio/target/classes started by anurodhsingh in /Users/anurodhsingh/Documents/portfolio)
+2024-09-01T16:55:44.010+05:30  INFO 8166 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-09-01T16:55:45.267+05:30  INFO 8166 --- [portfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-01T16:55:45.362+05:30  INFO 8166 --- [portfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 1 JPA repository interface.
+2024-09-01T16:55:46.346+05:30  INFO 8166 --- [portfolio] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-01T16:55:46.354+05:30  INFO 8166 --- [portfolio] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-01T16:55:46.354+05:30  INFO 8166 --- [portfolio] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-01T16:55:46.435+05:30  INFO 8166 --- [portfolio] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-01T16:55:46.439+05:30  INFO 8166 --- [portfolio] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2345 ms
+2024-09-01T16:55:46.658+05:30  INFO 8166 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-01T16:55:46.803+05:30  INFO 8166 --- [portfolio] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e5b621b
+2024-09-01T16:55:46.805+05:30  INFO 8166 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-01T16:55:46.864+05:30  INFO 8166 --- [portfolio] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-01T16:55:46.898+05:30  INFO 8166 --- [portfolio] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.9.Final
+2024-09-01T16:55:46.997+05:30  INFO 8166 --- [portfolio] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-01T16:55:47.203+05:30  INFO 8166 --- [portfolio] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-01T16:55:47.277+05:30  WARN 8166 --- [portfolio] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.12 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-09-01T16:55:47.761+05:30  INFO 8166 --- [portfolio] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.learning.portfolio.entities.UserEntity (class must be instantiated by Interceptor)
+2024-09-01T16:55:47.883+05:30  INFO 8166 --- [portfolio] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-01T16:55:47.890+05:30  INFO 8166 --- [portfolio] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T16:55:48.329+05:30  WARN 8166 --- [portfolio] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-01T16:55:48.360+05:30  WARN 8166 --- [portfolio] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6f2099fa-554c-4612-87b4-4a9416017d33
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-01T16:55:48.978+05:30  INFO 8166 --- [portfolio] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@15f229e8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29ce33e9, org.springframework.security.web.context.SecurityContextHolderFilter@64acf8d2, org.springframework.security.web.header.HeaderWriterFilter@78e4fa1, org.springframework.web.filter.CorsFilter@1f86f7da, org.springframework.security.web.csrf.CsrfFilter@220e1b7b, org.springframework.security.web.authentication.logout.LogoutFilter@1a99692, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4d0d568f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6258f9d1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3cd89c72, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@28b4b10e, org.springframework.security.web.access.ExceptionTranslationFilter@8113ea7, org.springframework.security.web.access.intercept.AuthorizationFilter@ec70725]
+2024-09-01T16:55:49.344+05:30  INFO 8166 --- [portfolio] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-09-01T16:55:49.362+05:30  INFO 8166 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : Started PortfolioApplication in 5.895 seconds (process running for 6.693)
+2024-09-01T16:56:14.000+05:30  INFO 8166 --- [portfolio] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-01T16:56:14.000+05:30  INFO 8166 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-01T16:56:14.011+05:30  INFO 8166 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2024-09-01T16:57:25.196+05:30  INFO 8451 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : Starting PortfolioApplication using Java 17.0.11 with PID 8451 (/Users/anurodhsingh/Documents/portfolio/target/classes started by anurodhsingh in /Users/anurodhsingh/Documents/portfolio)
+2024-09-01T16:57:25.200+05:30  INFO 8451 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-09-01T16:57:26.454+05:30  INFO 8451 --- [portfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-01T16:57:26.546+05:30  INFO 8451 --- [portfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 1 JPA repository interface.
+2024-09-01T16:57:27.491+05:30  INFO 8451 --- [portfolio] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-01T16:57:27.500+05:30  INFO 8451 --- [portfolio] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-01T16:57:27.501+05:30  INFO 8451 --- [portfolio] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-01T16:57:27.589+05:30  INFO 8451 --- [portfolio] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-01T16:57:27.598+05:30  INFO 8451 --- [portfolio] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2308 ms
+2024-09-01T16:57:27.855+05:30  INFO 8451 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-01T16:57:28.012+05:30  INFO 8451 --- [portfolio] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@353f472a
+2024-09-01T16:57:28.014+05:30  INFO 8451 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-01T16:57:28.064+05:30  INFO 8451 --- [portfolio] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-01T16:57:28.112+05:30  INFO 8451 --- [portfolio] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.9.Final
+2024-09-01T16:57:28.211+05:30  INFO 8451 --- [portfolio] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-01T16:57:28.403+05:30  INFO 8451 --- [portfolio] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-01T16:57:28.466+05:30  WARN 8451 --- [portfolio] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.12 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-09-01T16:57:28.968+05:30  INFO 8451 --- [portfolio] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.learning.portfolio.entities.UserEntity (class must be instantiated by Interceptor)
+2024-09-01T16:57:29.094+05:30  INFO 8451 --- [portfolio] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-01T16:57:29.097+05:30  INFO 8451 --- [portfolio] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T16:57:29.569+05:30  WARN 8451 --- [portfolio] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-01T16:57:29.599+05:30  WARN 8451 --- [portfolio] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: da163827-51f5-4b4e-9c87-f0d6bc073c3c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-01T16:57:30.026+05:30  INFO 8451 --- [portfolio] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@52b49891, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75973f7a, org.springframework.security.web.context.SecurityContextHolderFilter@1df2e767, org.springframework.security.web.header.HeaderWriterFilter@7a85454b, org.springframework.web.filter.CorsFilter@7940b729, org.springframework.security.web.csrf.CsrfFilter@694c0ed1, org.springframework.security.web.authentication.logout.LogoutFilter@3ed87b6e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@30a5a58d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c7aba7c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a319a2e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@527d1fe1, org.springframework.security.web.access.ExceptionTranslationFilter@1a99692, org.springframework.security.web.access.intercept.AuthorizationFilter@1932ad2c]
+2024-09-01T16:57:30.619+05:30  WARN 8451 --- [portfolio] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-09-01T16:57:30.624+05:30  INFO 8451 --- [portfolio] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T16:57:30.627+05:30  INFO 8451 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-01T16:57:30.639+05:30  INFO 8451 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-01T16:57:30.661+05:30  INFO 8451 --- [portfolio] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-01T16:57:30.678+05:30 ERROR 8451 --- [portfolio] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2024-09-01T16:57:40.144+05:30  INFO 8166 --- [portfolio] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T16:57:40.149+05:30  INFO 8166 --- [portfolio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-01T16:57:40.158+05:30  INFO 8166 --- [portfolio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-01T16:57:57.443+05:30  INFO 8534 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : Starting PortfolioApplication using Java 17.0.11 with PID 8534 (/Users/anurodhsingh/Documents/portfolio/target/classes started by anurodhsingh in /Users/anurodhsingh/Documents/portfolio)
+2024-09-01T16:57:57.447+05:30  INFO 8534 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-09-01T16:57:58.679+05:30  INFO 8534 --- [portfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-01T16:57:58.775+05:30  INFO 8534 --- [portfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 1 JPA repository interface.
+2024-09-01T16:57:59.736+05:30  INFO 8534 --- [portfolio] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-01T16:57:59.745+05:30  INFO 8534 --- [portfolio] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-01T16:57:59.745+05:30  INFO 8534 --- [portfolio] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-01T16:57:59.817+05:30  INFO 8534 --- [portfolio] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-01T16:57:59.821+05:30  INFO 8534 --- [portfolio] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2312 ms
+2024-09-01T16:58:00.055+05:30  INFO 8534 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-01T16:58:00.204+05:30  INFO 8534 --- [portfolio] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32256e68
+2024-09-01T16:58:00.206+05:30  INFO 8534 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-01T16:58:00.271+05:30  INFO 8534 --- [portfolio] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-01T16:58:00.316+05:30  INFO 8534 --- [portfolio] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.9.Final
+2024-09-01T16:58:00.406+05:30  INFO 8534 --- [portfolio] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-01T16:58:00.618+05:30  INFO 8534 --- [portfolio] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-01T16:58:00.683+05:30  WARN 8534 --- [portfolio] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.12 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-09-01T16:58:01.176+05:30  INFO 8534 --- [portfolio] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.learning.portfolio.entities.UserEntity (class must be instantiated by Interceptor)
+2024-09-01T16:58:01.293+05:30  INFO 8534 --- [portfolio] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-01T16:58:01.296+05:30  INFO 8534 --- [portfolio] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T16:58:01.760+05:30  WARN 8534 --- [portfolio] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-01T16:58:01.788+05:30  WARN 8534 --- [portfolio] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f06d2d69-5521-4e43-9c58-b1dbab3d59b3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-01T16:58:02.272+05:30  INFO 8534 --- [portfolio] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1932ad2c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4adc3951, org.springframework.security.web.context.SecurityContextHolderFilter@3ecbfba1, org.springframework.security.web.header.HeaderWriterFilter@1a99692, org.springframework.web.filter.CorsFilter@52b49891, org.springframework.security.web.csrf.CsrfFilter@7fb46c10, org.springframework.security.web.authentication.logout.LogoutFilter@16eb93af, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1e9f48d4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1df2e767, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c7aba7c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75973f7a, org.springframework.security.web.access.ExceptionTranslationFilter@1fa24e7, org.springframework.security.web.access.intercept.AuthorizationFilter@2e76d0d3]
+2024-09-01T16:58:02.739+05:30  INFO 8534 --- [portfolio] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-09-01T16:58:02.757+05:30  INFO 8534 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : Started PortfolioApplication in 5.836 seconds (process running for 6.626)
+2024-09-01T16:58:16.989+05:30  INFO 8534 --- [portfolio] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-01T16:58:16.989+05:30  INFO 8534 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-01T16:58:16.999+05:30  INFO 8534 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2024-09-01T16:59:50.615+05:30  INFO 8534 --- [portfolio] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T16:59:50.619+05:30  INFO 8534 --- [portfolio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-01T16:59:50.628+05:30  INFO 8534 --- [portfolio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-01T16:59:55.301+05:30  INFO 8888 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : Starting PortfolioApplication using Java 17.0.11 with PID 8888 (/Users/anurodhsingh/Documents/portfolio/target/classes started by anurodhsingh in /Users/anurodhsingh/Documents/portfolio)
+2024-09-01T16:59:55.305+05:30  INFO 8888 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-09-01T16:59:56.548+05:30  INFO 8888 --- [portfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-01T16:59:56.642+05:30  INFO 8888 --- [portfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 1 JPA repository interface.
+2024-09-01T16:59:57.602+05:30  INFO 8888 --- [portfolio] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-01T16:59:57.612+05:30  INFO 8888 --- [portfolio] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-01T16:59:57.612+05:30  INFO 8888 --- [portfolio] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-01T16:59:57.683+05:30  INFO 8888 --- [portfolio] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-01T16:59:57.686+05:30  INFO 8888 --- [portfolio] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2303 ms
+2024-09-01T16:59:57.918+05:30  INFO 8888 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-01T16:59:58.069+05:30  INFO 8888 --- [portfolio] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63bfdbcb
+2024-09-01T16:59:58.071+05:30  INFO 8888 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-01T16:59:58.120+05:30  INFO 8888 --- [portfolio] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-01T16:59:58.156+05:30  INFO 8888 --- [portfolio] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.9.Final
+2024-09-01T16:59:58.259+05:30  INFO 8888 --- [portfolio] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-01T16:59:58.470+05:30  INFO 8888 --- [portfolio] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-01T16:59:58.542+05:30  WARN 8888 --- [portfolio] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.12 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-09-01T16:59:59.017+05:30  INFO 8888 --- [portfolio] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.learning.portfolio.entities.UserEntity (class must be instantiated by Interceptor)
+2024-09-01T16:59:59.134+05:30  INFO 8888 --- [portfolio] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-01T16:59:59.138+05:30  INFO 8888 --- [portfolio] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T16:59:59.601+05:30  WARN 8888 --- [portfolio] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-01T16:59:59.628+05:30  WARN 8888 --- [portfolio] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 87688521-0fd7-4a75-bfe0-918f5f556c46
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-01T17:00:00.041+05:30  INFO 8888 --- [portfolio] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@75973f7a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7940b729, org.springframework.security.web.context.SecurityContextHolderFilter@4d0d568f, org.springframework.security.web.header.HeaderWriterFilter@3ecbfba1, org.springframework.web.filter.CorsFilter@527d1fe1, org.springframework.security.web.csrf.CsrfFilter@118f2486, org.springframework.security.web.authentication.logout.LogoutFilter@4244e477, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@59cb10e0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@729c98, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2daf0cc9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24fb752f, org.springframework.security.web.access.ExceptionTranslationFilter@2a0881f1, org.springframework.security.web.access.intercept.AuthorizationFilter@4adc3951]
+2024-09-01T17:00:00.630+05:30  INFO 8888 --- [portfolio] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-09-01T17:00:00.648+05:30  INFO 8888 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : Started PortfolioApplication in 5.876 seconds (process running for 6.674)
+2024-09-01T17:00:06.285+05:30  INFO 8888 --- [portfolio] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-01T17:00:06.285+05:30  INFO 8888 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-01T17:00:06.293+05:30  INFO 8888 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2024-09-01T17:02:00.159+05:30  INFO 8888 --- [portfolio] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T17:02:00.168+05:30  INFO 8888 --- [portfolio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-01T17:02:00.180+05:30  INFO 8888 --- [portfolio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-01T17:09:30.698+05:30  INFO 12286 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : Starting PortfolioApplication using Java 17.0.11 with PID 12286 (/Users/anurodhsingh/Documents/portfolio/target/classes started by anurodhsingh in /Users/anurodhsingh/Documents/portfolio)
+2024-09-01T17:09:30.704+05:30  INFO 12286 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-09-01T17:09:32.060+05:30  INFO 12286 --- [portfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-01T17:09:32.152+05:30  INFO 12286 --- [portfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interface.
+2024-09-01T17:09:33.127+05:30  INFO 12286 --- [portfolio] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-01T17:09:33.137+05:30  INFO 12286 --- [portfolio] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-01T17:09:33.137+05:30  INFO 12286 --- [portfolio] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-01T17:09:33.586+05:30  INFO 12286 --- [portfolio] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-01T17:09:33.590+05:30  INFO 12286 --- [portfolio] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2797 ms
+2024-09-01T17:09:33.833+05:30  INFO 12286 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-01T17:09:34.187+05:30  INFO 12286 --- [portfolio] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a950a3b
+2024-09-01T17:09:34.189+05:30  INFO 12286 --- [portfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-01T17:09:34.263+05:30  INFO 12286 --- [portfolio] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-01T17:09:34.305+05:30  INFO 12286 --- [portfolio] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.9.Final
+2024-09-01T17:09:34.403+05:30  INFO 12286 --- [portfolio] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-01T17:09:34.774+05:30  INFO 12286 --- [portfolio] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-01T17:09:34.846+05:30  WARN 12286 --- [portfolio] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.12 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-09-01T17:09:35.321+05:30  INFO 12286 --- [portfolio] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.learning.portfolio.entities.UserEntity (class must be instantiated by Interceptor)
+2024-09-01T17:09:35.427+05:30  INFO 12286 --- [portfolio] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-01T17:09:35.436+05:30  INFO 12286 --- [portfolio] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-01T17:09:35.928+05:30  WARN 12286 --- [portfolio] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-01T17:09:35.961+05:30  WARN 12286 --- [portfolio] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 2e13494f-d7d3-47c8-8557-9aa6b6715d2e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-01T17:09:36.393+05:30  INFO 12286 --- [portfolio] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@28b4b10e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c0d7099, org.springframework.security.web.context.SecurityContextHolderFilter@3f31892e, org.springframework.security.web.header.HeaderWriterFilter@64acf8d2, org.springframework.web.filter.CorsFilter@74844f8a, org.springframework.security.web.csrf.CsrfFilter@893081e, org.springframework.security.web.authentication.logout.LogoutFilter@3ecbfba1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@a319a2e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7fb46c10, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@694c0ed1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c945ee7, org.springframework.security.web.access.ExceptionTranslationFilter@4516c2ef, org.springframework.security.web.access.intercept.AuthorizationFilter@29ce33e9]
+2024-09-01T17:09:36.961+05:30  INFO 12286 --- [portfolio] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-09-01T17:09:36.996+05:30  INFO 12286 --- [portfolio] [main] c.l.portfolio.PortfolioApplication       : Started PortfolioApplication in 6.868 seconds (process running for 8.634)
+2024-09-01T17:09:52.279+05:30  INFO 12286 --- [portfolio] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-01T17:09:52.280+05:30  INFO 12286 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-01T17:09:52.290+05:30  INFO 12286 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
