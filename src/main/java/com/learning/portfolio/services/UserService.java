@@ -34,10 +34,15 @@ public class UserService {
         return false;
     }
  
-    public void save(UserEntity user) {
+    public boolean registerUser(UserEntity user) {
 		logger.info("user "+ user);
-        user.setPassword(passwordEncoder.encode(user.getPassword()));
-        userRepository.save(user);
-		logger.info("user data saved in db");
+		if(findByUsername(user.getUsername())!=null){
+			return false;
+		} else {
+	        user.setPassword(passwordEncoder.encode(user.getPassword()));
+	        userRepository.save(user);
+			logger.info("user data saved in db");
+			return true;
+		}
     }
 }

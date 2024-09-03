@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="user_portfolio")
+@Table(name="user")
 public class UserEntity {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -16,6 +16,10 @@ public class UserEntity {
 	private String lastname;
 	private String username;
 	private String password;
+	
+	public UserEntity() {
+		
+	}
 	
 	public UserEntity(String firstname, String lastname, String username, String password) {
 		super();
