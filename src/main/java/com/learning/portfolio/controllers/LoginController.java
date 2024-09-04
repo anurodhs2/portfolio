@@ -14,6 +14,7 @@ import com.learning.portfolio.dto.UserResponse;
 import com.learning.portfolio.entities.UserEntity;
 import com.learning.portfolio.models.UserDetail;
 import com.learning.portfolio.services.UserService;
+import com.learning.portfolio.utils.JwtUtil;
 
 @RestController
 @RequestMapping("/api")
@@ -21,6 +22,9 @@ public class LoginController {
 	Logger logger = LoggerFactory.getLogger(LoginController.class);
 	@Autowired
     private UserService userService;
+   
+	@Autowired
+    private JwtUtil jwtUtil;
 	
 	@PostMapping("/login")
     public ResponseEntity<ApiResponse> userLogin(@RequestBody UserDetail user) {
@@ -29,7 +33,8 @@ public class LoginController {
 		logger.info("user login attempt");
         if (userService.authenticate(username, password)) {
         	UserEntity userDetail = userService.findByUsername(username);
-        	UserResponse userResponse = new UserResponse(userDetail.getFirstname(), userDetail.getLastname(), userDetail.getUsername());
+        	String token = jwtUtil.generateToken(username);
+        	UserResponse userResponse = new UserResponse(userDetail.getFirstname(), userDetail.getLastname(), userDetail.getUsername(), token);
 			ApiResponse response = new ApiResponse("User logged in successfully", true, userResponse);
             return ResponseEntity.ok(response);
         } else {

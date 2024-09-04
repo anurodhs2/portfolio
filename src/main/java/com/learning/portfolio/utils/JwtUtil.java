@@ -12,7 +12,7 @@ import java.util.function.Function;
 @Component
 public class JwtUtil {
  
-    private String SECRET_KEY = "yoyo-secret-key"; // Replace with a strong secret key
+    private String SECRET_KEY = "cKZ6EDoFUZ0826N1SjfLH37a6gkpRrt9LT6VkyJ0mPTDGfINPtP2CMJYHqkKwIK5"; // Replace with a strong secret key
  
     public String extractUsername(String token) {
         return extractClaim(token, Claims::getSubject);
@@ -49,7 +49,7 @@ public class JwtUtil {
                 .signWith(SignatureAlgorithm.HS256, SECRET_KEY)
                 .compact();
     }
- 
+
     public Boolean validateToken(String token, String username) {
         final String extractedUsername = extractUsername(token);
         return (extractedUsername.equals(username) && !isTokenExpired(token));

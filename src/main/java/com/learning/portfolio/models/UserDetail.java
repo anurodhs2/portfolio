@@ -11,6 +11,13 @@ public class UserDetail {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
+	public UserDetail(String username, String password) {
+		super();
+		this.username = username;
+		this.password = password;
+	}
+	
 	@Override
 	public String toString() {
 		return "User [username=" + username + ", password=" + password + "]";

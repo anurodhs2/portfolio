@@ -17,10 +17,10 @@ public class UserService {
  
     @Autowired
     private PasswordEncoder passwordEncoder;
+    
  
     public UserEntity findByUsername(String username) {
-        return userRepository.findByUsername(username)
-                .orElse(null); // Handle the case where the user is not found
+        return userRepository.findByUsername(username);
     }
  
     public boolean authenticate(String username, String password) {
