@@ -43,7 +43,7 @@ public class PortfolioController {
 			UserPortfolioResponse userPortfolioResponse;
 			if(portfolio != null) {
 				userPortfolioResponse = new UserPortfolioResponse(username, portfolio.getInvestment(), portfolio.getAssets(), portfolio.getDebts());
-				response = new ApiResponse("Portfolio not found for user: "+ username, false, userPortfolioResponse);
+				response = new ApiResponse("Portfolio found" , false, userPortfolioResponse);
 				return ResponseEntity.ok(response);
 			} else {				
 				response = new ApiResponse("Portfolio not found for user: "+ username, false);
